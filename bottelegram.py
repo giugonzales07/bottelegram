@@ -19,7 +19,7 @@ def contagem(mensagem):
     elif datapadrao <= hoje:    
         delta = hoje - datapadrao
 
-    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje é dia " + str(hoje) +"\nfaltam: " + str(delta.days) + " dias pro AI!!!")
+    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje é dia " + str(hoje) + "\nfaltam: " + str(delta.days) + " dias pro AI!!!")
 
 def verificar(mensagem):
     return True
