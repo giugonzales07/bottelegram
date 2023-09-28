@@ -10,7 +10,7 @@ dia= 18
 
 @bot.message_handler(commands=["contagem"])
 def contagem(mensagem):
-    datapadrao = datetime.(ano, mes, dia)
+    datapadrao = datetime(ano, mes, dia)
     hoje = datetime.today()
 
     if datapadrao > hoje:
