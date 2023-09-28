@@ -10,7 +10,7 @@ dia= 18
 
 @bot.message_handler(commands=["contagem"])
 def contagem(mensagem):
-    datapadrao = datetime.date(ano, mes, dia)
+    datapadrao = datetime.(ano, mes, dia)
     hoje = datetime.date.today()
 
     if datapadrao > hoje:
@@ -19,7 +19,7 @@ def contagem(mensagem):
     elif datapadrao <= hoje:    
         delta = hoje - datapadrao
 
-    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + " faltam: " + str(delta.days) + " dias!!!" + " e hoje é dia " + hoje)
+    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + " faltam: " + str(delta.days) + " dias!!!" + " e hoje é dia " + str(hoje))
 
 def verificar(mensagem):
     return True
