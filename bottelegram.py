@@ -12,6 +12,7 @@ dia= 18
 def contagem(mensagem):
     datapadrao = datetime.date(ano, mes, dia)
     hoje = datetime.date.today()
+    hoje = hoje - timedelta(hours=3)
 
     if datapadrao > hoje:
         delta = datapadrao - hoje
