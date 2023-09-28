@@ -1,6 +1,5 @@
 import telebot
-import datetime 
-import timedelta
+from datetime import datetime, timedelta
 
 CHAV_API = "6581266371:AAHb_wLY10rLLXJwyq78lM_yUIg4CVW2IIU"
 
