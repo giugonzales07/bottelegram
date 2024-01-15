@@ -4,9 +4,9 @@ from datetime import datetime, timedelta
 CHAV_API = "6581266371:AAHb_wLY10rLLXJwyq78lM_yUIg4CVW2IIU"
 
 bot = telebot.TeleBot(CHAV_API)
-ano= 2023       #formato AAAA
-mes=  11        #usar numero
-dia= 19
+ano= 2024       #formato AAAA
+mes=  01        #usar numero
+dia= 30
 
 @bot.message_handler(commands=["contagem"])
 def contagem(mensagem):
@@ -19,8 +19,8 @@ def contagem(mensagem):
     elif datapadrao <= hoje:    
         delta = hoje - datapadrao
 
-    #bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje é dia " + str(hoje.day) + "/" + str(hoje.month)  + "\nfaltam: " + str(delta.days) + " dias pro TRI !!!")
-    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje (" + str(hoje.day) + "/" + str(hoje.month)  + ") é um belo dia para a Operação Emproguetes\n\n" + "obs: não se esqueça, Somos Tri Alto Impacto!!!!!!!!!!!!!")
+    bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje é dia " + str(hoje.day) + "/" + str(hoje.month) + "\nfaltam: 83.333 para o VERDE !!!" + "\nfaltam: " + str(delta.days) + " dias pras auditorias do EDL !!!")
+    #bot.send_message(mensagem.chat.id, "Olá, " + mensagem.from_user.first_name + "\nhoje (" + str(hoje.day) + "/" + str(hoje.month)  + ") é um belo dia para a Operação Emproguetes\n\n" + "obs: não se esqueça, Somos Tri Alto Impacto!!!!!!!!!!!!!")
     
 def verificar(mensagem):
     return True
