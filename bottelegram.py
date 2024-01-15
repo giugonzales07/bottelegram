@@ -6,7 +6,7 @@ CHAV_API = "6581266371:AAHb_wLY10rLLXJwyq78lM_yUIg4CVW2IIU"
 bot = telebot.TeleBot(CHAV_API)
 ano= 2024       #formato AAAA
 mes=  1         #usar numero
-dia= 30
+dia= 31
 
 @bot.message_handler(commands=["contagem"])
 def contagem(mensagem):
