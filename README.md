@@ -2,6 +2,12 @@
 
 This project is about a telegram bot in python with the bot BotFather. It counts down the time until the date you define in the code.
 
+## Technologies
+<div style="display: inline_block">
+  <img alt="giu-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+   <img alt="giu-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/botfather/botfather-original.svg">
+</div>
+
 ## Installation
 
 1. Clone the code
