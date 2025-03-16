@@ -1,7 +1,7 @@
 import telebot
 from datetime import datetime, timedelta
 
-CHAV_API = "6581266371:AAHb_wLY10rLLXJwyq78lM_yUIg4CVW2IIU"
+CHAV_API = "your-api-key"
 
 bot = telebot.TeleBot(CHAV_API)
 ano= 2025       #formato AAAA
